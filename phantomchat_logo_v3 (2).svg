@@ -1,0 +1,107 @@
+<svg width="100%" viewBox="0 0 680 520" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="ghostGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#9B7FFF"/>
+    <stop offset="50%" stop-color="#6B3FF0"/>
+    <stop offset="100%" stop-color="#00D4B4"/>
+  </linearGradient>
+  <linearGradient id="ghostGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#7B5CE0" stop-opacity="0.4"/>
+    <stop offset="100%" stop-color="#00C4A4" stop-opacity="0.15"/>
+  </linearGradient>
+  <linearGradient id="eyeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="100%" stop-color="#c4b8ff"/>
+  </linearGradient>
+  <linearGradient id="tailGrad" x1="100%" y1="0%" x2="0%" y2="0%">
+    <stop offset="0%" stop-color="#7B5CE0" stop-opacity="0.7"/>
+    <stop offset="100%" stop-color="#6B3FF0" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="sparkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#a99bff"/>
+    <stop offset="100%" stop-color="#00D4B4"/>
+  </linearGradient>
+  <linearGradient id="bgGlow" x1="50%" y1="0%" x2="50%" y2="100%">
+    <stop offset="0%" stop-color="#1a0840"/>
+    <stop offset="100%" stop-color="#0a0a18"/>
+  </linearGradient>
+</defs>
+
+<!-- Card background -->
+<rect x="90" y="20" width="500" height="480" rx="32" fill="url(#bgGlow)"/>
+<rect x="90" y="20" width="500" height="480" rx="32" fill="none" stroke="#2a1860" stroke-width="1"/>
+
+<!-- Ambient glow -->
+<ellipse cx="340" cy="210" rx="140" ry="115" fill="#2a1060" opacity="0.8"/>
+<ellipse cx="340" cy="210" rx="95" ry="78" fill="#3a1880" opacity="0.5"/>
+
+<!-- Dissolving tail wisps -->
+<path d="M242 198 C215 184 188 188 168 180 C153 174 149 184 162 191 C176 199 198 196 212 208 C196 213 172 216 157 226 C144 234 150 246 164 242 C182 236 206 226 224 229" fill="none" stroke="url(#tailGrad)" stroke-width="11" stroke-linecap="round" opacity="0.5"/>
+<path d="M240 233 C217 226 194 230 177 224 C164 220 162 230 174 236 C188 242 210 238 223 246" fill="none" stroke="url(#tailGrad)" stroke-width="7" stroke-linecap="round" opacity="0.3"/>
+<path d="M237 258 C220 253 202 258 187 253 C176 249 175 258 185 263 C198 269 216 265 227 270" fill="none" stroke="url(#tailGrad)" stroke-width="4" stroke-linecap="round" opacity="0.18"/>
+
+<!-- Ghost body -->
+<path d="M340 82 C293 82 250 110 237 148 C225 184 227 228 234 260 C240 282 230 299 220 314 C212 327 220 340 232 332 C247 322 260 306 274 302 C285 298 297 308 310 316 C322 324 334 328 340 328 C346 328 358 324 370 316 C383 308 395 298 406 302 C420 306 433 322 448 332 C460 340 468 327 460 314 C450 299 440 282 446 260 C453 228 455 184 443 148 C430 110 387 82 340 82 Z" fill="url(#ghostGrad)" opacity="0.96"/>
+
+<!-- Inner highlight -->
+<path d="M340 96 C302 96 268 117 256 150 C246 182 248 220 254 248 C258 266 252 280 246 292 C260 284 272 292 286 302 C300 312 322 316 340 316 C358 316 380 312 394 302 C408 292 420 284 434 292 C428 280 422 266 426 248 C432 220 434 182 424 150 C412 117 378 96 340 96 Z" fill="url(#ghostGrad2)" opacity="0.55"/>
+
+<!-- Left eye — hollow ethereal ring -->
+<circle cx="312" cy="190" r="17" fill="none" stroke="url(#eyeGrad)" stroke-width="4" opacity="0.9"/>
+<circle cx="312" cy="190" r="6" fill="white" opacity="0.12"/>
+<path d="M302 182 C306 177 318 177 322 182" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.65"/>
+
+<!-- Right eye — hollow ethereal ring -->
+<circle cx="368" cy="190" r="17" fill="none" stroke="url(#eyeGrad)" stroke-width="4" opacity="0.9"/>
+<circle cx="368" cy="190" r="6" fill="white" opacity="0.12"/>
+<path d="M358 182 C362 177 374 177 378 182" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" opacity="0.65"/>
+
+<!-- Chat bubble tail -->
+<path d="M352 322 L366 346 L378 322" fill="#00D4B4" opacity="0.75"/>
+
+<!-- Ghost edge glow -->
+<path d="M340 82 C293 82 250 110 237 148 C225 184 227 228 234 260 C240 282 230 299 220 314 C212 327 220 340 232 332 C247 322 260 306 274 302 C285 298 297 308 310 316 C322 324 334 328 340 328 C346 328 358 324 370 316 C383 308 395 298 406 302 C420 306 433 322 448 332 C460 340 468 327 460 314 C450 299 440 282 446 260 C453 228 455 184 443 148 C430 110 387 82 340 82 Z" fill="none" stroke="#00D4B4" stroke-width="1.5" opacity="0.45"/>
+
+<!-- Dissolving right-side particles -->
+<circle cx="458" cy="144" r="3"   fill="#00D4B4" opacity="0.6"/>
+<circle cx="469" cy="158" r="2"   fill="#00D4B4" opacity="0.4"/>
+<circle cx="476" cy="174" r="1.5" fill="#9B7FFF" opacity="0.5"/>
+<circle cx="463" cy="190" r="2.5" fill="#00D4B4" opacity="0.3"/>
+<circle cx="473" cy="208" r="1.5" fill="#9B7FFF" opacity="0.35"/>
+<circle cx="479" cy="228" r="1"   fill="#00D4B4" opacity="0.25"/>
+<circle cx="456" cy="134" r="1.5" fill="#9B7FFF" opacity="0.4"/>
+<circle cx="447" cy="124" r="1"   fill="#00D4B4" opacity="0.3"/>
+
+<!-- Left particles -->
+<circle cx="221" cy="150" r="2"   fill="#9B7FFF" opacity="0.3"/>
+<circle cx="213" cy="166" r="1.5" fill="#9B7FFF" opacity="0.22"/>
+<circle cx="209" cy="184" r="1"   fill="#9B7FFF" opacity="0.18"/>
+
+<!-- Top sparkles -->
+<circle cx="318" cy="70" r="2"   fill="#a99bff" opacity="0.6"/>
+<circle cx="340" cy="64" r="1.5" fill="#00D4B4" opacity="0.55"/>
+<circle cx="362" cy="69" r="2.5" fill="#a99bff" opacity="0.45"/>
+<circle cx="378" cy="62" r="1"   fill="#00D4B4" opacity="0.6"/>
+<circle cx="303" cy="66" r="1.5" fill="#9B7FFF" opacity="0.5"/>
+<path d="M390 68 L392 64 L394 68 L398 70 L394 72 L392 76 L390 72 L386 70 Z" fill="#00D4B4" opacity="0.5"/>
+<path d="M292 72 L293.5 68 L295 72 L299 73.5 L295 75 L293.5 79 L292 75 L288 73.5 Z" fill="#a99bff" opacity="0.4"/>
+
+<!-- Wordmark — fully centered as one unit -->
+<text x="340" y="408"
+      font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+      font-weight="800" font-size="46"
+      text-anchor="middle"
+      letter-spacing="-0.5">
+  <tspan fill="white">Phantom</tspan><tspan fill="#00D4B4">Chat</tspan>
+</text>
+
+<!-- Separator line -->
+<line x1="190" y1="416" x2="490" y2="416" stroke="url(#sparkGrad)" stroke-width="0.75" opacity="0.28"/>
+
+<!-- Tagline -->
+<text x="340" y="444"
+      font-family="'Helvetica Neue', Helvetica, Arial, sans-serif"
+      font-weight="400" font-size="11.5"
+      fill="#6B5BA0" letter-spacing="3.5"
+      text-anchor="middle">SPEAK WITHOUT A FACE</text>
+</svg>
